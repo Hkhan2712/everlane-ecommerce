@@ -32,7 +32,7 @@
 1. The user logs in or signs up and receives both an `accessToken` and a `refreshToken`.
 2. `accessToken` is stored temporarily (in memory or session).
 3. `refreshToken` is stored securely in an **HTTPOnly cookie**.
-4. When the access token expires, the client requests a new one via `/auth/refresh`.
+4. When the access token expires, the client requests a new one via `/auth/refresh-token`.
 5. When a user **changes their password**, old refresh tokens are invalidated for security.
 
 ---
