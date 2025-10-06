@@ -183,17 +183,18 @@ CLIENT_URL=http://localhost:5173
 ### **1️⃣ Backend**
 ```bash
 cd server
-npm install
-npm run migrate     # if you have Knex migrations configured
-npm run dev
+yarn install
+yarn migrate    
+yarn dev
+
 ```
 Default server runs at: **http://localhost:3000**
 
 ### **2️⃣ Frontend**
 ```bash
 cd client
-npm install
-npm run dev
+yarn install
+yarn dev
 ```
 Frontend runs at: **http://localhost:5173**
 
