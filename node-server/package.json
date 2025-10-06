@@ -1,0 +1,45 @@
+{
+	"name": "node-server",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"dependencies": {
+		"@faker-js/faker": "^9.9.0",
+		"bcrypt": "^6.0.0",
+		"cookie-parser": "^1.4.7",
+		"cors": "^2.8.5",
+		"dayjs": "^1.11.13",
+		"dotenv": "^17.2.1",
+		"express": "^5.1.0",
+		"express-rate-limit": "^8.0.1",
+		"express-validator": "^7.2.1",
+		"joi": "^18.0.0",
+		"jsonwebtoken": "^9.0.2",
+		"knex": "^3.1.0",
+		"module-alias": "^2.2.3",
+		"morgan": "^1.10.1",
+		"mysql2": "^3.14.3"
+	},
+	"devDependencies": {
+		"jest": "^30.0.5",
+		"nodemon": "^3.1.10",
+		"supertest": "^7.1.4"
+	},
+	"scripts": {
+		"dev": "nodemon src/server.js",
+		"migrate:make": "knex --knexfile=src/config/knexfile.js migrate:make",
+		"migrate:latest": "knex --knexfile=src/config/knexfile.js migrate:latest",
+		"migrate:rollback": "knex --knexfile=src/config/knexfile.js migrate:rollback",
+		"seed:make": "knex --knexfile=src/config/knexfile.js seed:make",
+		"seed:run": "knex --knexfile=src/config/knexfile.js seed:run",
+		"migrate:up": "knex --knexfile=src/config/knexfile.js migrate:up",
+		"migrate:down": "knex --knexfile=src/config/knexfile.js migrate:down",
+		"test": "jest --runInBand"
+	},
+	"_moduleAliases": {
+		"@config": "src/config",
+		"@modules": "src/modules",
+		"@utils": "src/utils",
+		"@middlewares": "src/middlewares"
+	}
+}

@@ -1,0 +1,91 @@
+.accordionFilter {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.accordionHeader {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0.75rem 0;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordionBody {
+    padding: 0.25rem 0 0.75rem;
+}
+
+.filterCheckbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.filterToggle {
+    display: flex;
+    align-items: center;
+    gap: .125rem;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.filterColors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filterColorItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.filterColorCircle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    margin-bottom: 0.25rem;
+}
+
+.filterSizeGroup {
+    margin-bottom: 1rem;
+}
+
+.filterSizeTitle {
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.filterSizes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+    gap: 0.5rem;
+}
+
+.filterSizeBtn {
+    border: 1px solid #fff;
+    background: #f7f7f7;
+    padding: 0.5rem 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: border 0.2s ease;
+}
+
+.filterSizeBtn:hover {
+    border-color: #333;
+}

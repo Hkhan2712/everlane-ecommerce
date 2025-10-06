@@ -1,0 +1,13 @@
+/* CardGrid.module.css */
+.cardGrid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Khi >= 992px (desktop) thì fix đúng 3 cột */
+@media (min-width: 992px) {
+    .cardGrid.shopGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

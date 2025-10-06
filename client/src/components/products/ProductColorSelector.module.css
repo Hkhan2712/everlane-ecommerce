@@ -1,0 +1,33 @@
+.optionGroup {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.colors {
+  display: flex;
+  gap: 12px;
+}
+
+.color {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.color:hover {
+  border-color: #000;
+}
+
+.active {
+  border-color: #000;
+  box-shadow: 0 0 0 2px #000;
+}

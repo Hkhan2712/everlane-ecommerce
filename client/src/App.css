@@ -1,0 +1,64 @@
+/* App.css */
+:root {
+  --header-height: 200px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #262626 !important;
+}
+
+.swiper-pagination-bullet {
+  background: #262626 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #262626 !important;
+}
+
+/* Toast container chung */
+.Toastify__toast-container {
+  font-size: 0.9rem;
+}
+
+/* Toast box cơ bản */
+.Toastify__toast {
+    border-radius: 0.5rem; /* giống .rounded */
+    border: 1px solid black;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* SUCCESS → giống primary (nền trắng, chữ đen) */
+.Toastify__toast--success {
+    background-color: white !important;
+    color: black !important;
+    border-color: black;
+}
+
+/* ERROR → giống secondary (nền đen, chữ trắng) */
+.Toastify__toast--error {
+	background-color: black;
+	color: white;
+	border-color: black;
+}
+
+/* INFO → tuỳ chỉnh theo style */
+.Toastify__toast--info {
+	background-color: white !important;
+	color: black;
+	border-color: black;
+}
+
+/* WARNING → cũng giữ tối giản */
+.Toastify__toast--warning {
+	background-color: black !important;
+	color: white;
+	border-color: black;
+}
+
+/* Progress bar */
+.Toastify__progress-bar {
+	background: black !important;
+}

@@ -1,0 +1,41 @@
+.heroSection {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding-left: 5vw; 
+    position: relative;
+    color: white;
+    text-align: left;
+}
+
+.heroSection::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.heroTitle {
+    font-size: 3rem; 
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.heroSubTitle {
+    font-size: 1.5rem; 
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    width: 100%; 
+}

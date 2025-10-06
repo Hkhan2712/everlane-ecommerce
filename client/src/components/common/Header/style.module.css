@@ -1,0 +1,100 @@
+/* Header.module.css */
+.red {
+    color: red !important;
+}
+.topBar {
+    background-color: #000000;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.subNav {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.subNav li {
+    flex: 0 0 auto;
+}
+
+.subNav li a {
+    display: block;
+    padding: 16px 8px;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #262626;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.subNav li a:hover {
+    border-bottom: 2px solid #000;
+}
+
+/* MainNav items */
+.navLink {
+  text-decoration: none;
+  color: #262626;
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+/* underline mặc định ẩn */
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #262626;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.navLink.active::after {
+  width: 100%;
+}
+
+.fsSmall {
+    font-size: .8rem;
+}
+
+.fsMedium {
+    font-size: 1rem;
+}
+
+
+.megaMenu a {
+  position: relative;
+  text-decoration: none; 
+}
+
+.megaMenu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; 
+  width: 0%;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.megaMenu a:hover::after {
+  width: 100%;
+}

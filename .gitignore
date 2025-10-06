@@ -1,0 +1,49 @@
+# -------------------------
+# Node / Express backend
+# -------------------------
+node_modules/
+.env
+.env.*
+dist/
+build/
+tmp/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Knex / Database files
+db.sqlite
+*.db
+*.sqlite
+*.sqlite3
+
+# -------------------------
+# React / Vite frontend
+# -------------------------
+client/node_modules/
+client/.env
+client/.env.*
+client/dist/
+client/build/
+client/.vite/
+
+# -------------------------
+# OS / Editor junk
+# -------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# -------------------------
+# Misc
+# -------------------------
+*.zip
+*.tar.gz
+*.bak
+*.tmp
+

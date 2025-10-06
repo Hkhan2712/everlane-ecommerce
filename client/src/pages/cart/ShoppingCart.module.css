@@ -1,0 +1,29 @@
+.shoppingCart {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Cột danh sách item */
+.cartItems {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Cột tóm tắt đơn hàng */
+.orderSummary {
+  position: sticky;
+  top: 80px; /* để khi scroll vẫn dính trên */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .shoppingCart {
+    flex-direction: column;
+  }
+  .orderSummary {
+    position: static;
+    margin-top: 1rem;
+  }
+}

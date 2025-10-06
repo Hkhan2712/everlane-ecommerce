@@ -1,0 +1,45 @@
+.optionGroup {
+  	margin-bottom: 20px;
+}
+
+.sizeHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.label {
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+.sizeGuide {
+	font-size: 0.9rem;
+	color: #555;
+	text-decoration: underline;
+}
+
+.sizes {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.size {
+	border: 1px solid #ddd;
+	background: #fff;
+	padding: .5rem 1rem;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.size:hover {
+    border-color: #000;
+}
+
+.size.active {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}

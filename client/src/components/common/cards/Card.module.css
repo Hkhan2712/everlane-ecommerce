@@ -1,0 +1,19 @@
+.card {
+    border-radius: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 0;
+}
+
+.cardImage {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.cardTitle {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 300;
+}
